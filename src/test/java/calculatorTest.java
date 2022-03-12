@@ -6,10 +6,10 @@ public class calculatorTest {
     @Test
     public void add_test(){
         calculator a = new calculator();
-        assertEquals(4,a.addition(2,2));
-        assertEquals(-6,a.addition(-1,-5));
-        assertEquals(3,a.addition(4,-1));
-        assertEquals(-5,a.addition(-7,2));
+        assertEquals(4,a.addition(2,1));
+        assertEquals(-6,a.addition(-1,-4));
+        assertEquals(3,a.addition(4,-6));
+        assertEquals(-5,a.addition(-7,8));
     }
 
 
