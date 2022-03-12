@@ -7,10 +7,10 @@ public class calculatorTest {
     //test case by lahari
     public void add_test(){
         calculator a = new calculator();
-        assertEquals(4,a.addition(2,3));
-        assertEquals(-6,a.addition(-1,-3));
-        assertEquals(3,a.addition(4,-7));
-        assertEquals(-5,a.addition(-7,9));
+        assertEquals(4,a.addition(2,2));
+        assertEquals(-6,a.addition(-1,-5));
+        assertEquals(3,a.addition(4,-1));
+        assertEquals(-5,a.addition(-7,2));
     }
 
 
