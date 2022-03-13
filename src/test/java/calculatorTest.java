@@ -28,16 +28,16 @@ public class calculatorTest {
     public  void mul_test(){
         assertEquals("9",calc.multiplication("3","3"));
         assertEquals("-9",calc.multiplication("3","-3"));
-        assertEquals("1,00000E+20",calc.multiplication("9999999999","9999999999"));
-        assertEquals("-1,00000E+20",calc.multiplication("9999999999","-9999999999"));
+        assertEquals("1.00000E+20",calc.multiplication("9999999999","9999999999"));
+        assertEquals("-1.00000E+20",calc.multiplication("9999999999","-9999999999"));
     }
 
     @Test
     public  void div_test(){
         assertEquals("1",calc.division("3","3"));
         assertEquals("-1",calc.division("3","-3"));
-        assertEquals("1,00000E-10",calc.division("1","9999999999"));
-        assertEquals("-1,00000E-10",calc.division("1","-9999999999"));
+        assertEquals("1.00000E-10",calc.division("1","9999999999"));
+        assertEquals("-1.00000E-10",calc.division("1","-9999999999"));
     }
 
 
