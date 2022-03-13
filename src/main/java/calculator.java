@@ -9,8 +9,13 @@ public class calculator {
         return display(da);
     }
 
-    public int subtraction(int a, int b) {
-        return a-b;
+    public String subtraction(String a, String b) {
+        double da = Double.parseDouble(a);
+        double db = Double.parseDouble(b);
+
+        da -= db;
+
+        return display(da);
     }
 
         public String multiplication(String a, String b) {

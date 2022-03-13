@@ -20,10 +20,10 @@ public class calculatorTest {
     @Test
     //test cases by Neeraj
     public  void sub_test(){
-        assertEquals(4,calc.subtraction(9,5));
-        assertEquals(-6,calc.subtraction(5,11));
-        assertEquals(3,calc.subtraction(7,4));
-        assertEquals(-5,calc.subtraction(2,7));
+        assertEquals("4",calc.subtraction("9","5"));
+        assertEquals("-6",calc.subtraction("5","11"));
+        assertEquals("3",calc.subtraction("7","4"));
+        assertEquals("-5",calc.subtraction("2","7"));
     }
 
     @Test
@@ -64,18 +64,18 @@ public class calculatorTest {
 
     @Test
     public void Subtract_test() {
-        assertEquals(1,calc.subtraction(2,1));
-        assertEquals(-1,calc.subtraction(1,2));
-        assertEquals(0,calc.subtraction(1,1));
-        assertEquals(-999,calc.subtraction(-500,499));
+        assertEquals("1",calc.subtraction("2","1"));
+        assertEquals("-1",calc.subtraction("1","2"));
+        assertEquals("2",calc.subtraction("1","-1"));
+        assertEquals("-999",calc.subtraction("-500","499"));
     }
 
     @Test
     public void Subtract_FailTest() {
-        assertNotEquals(1,calc.subtraction(2,-1));
-        assertNotEquals(-1,calc.subtraction(1,-2));
-        assertNotEquals(0,calc.subtraction(1,-1));
-        assertNotEquals(-999,calc.subtraction(-500,-499));
+        assertNotEquals("1",calc.subtraction("2","-1"));
+        assertNotEquals("-1",calc.subtraction("1","-2"));
+        assertNotEquals("0",calc.subtraction("1","-1"));
+        assertNotEquals("-999",calc.subtraction("-500","-499"));
     }
 
     @Test
@@ -110,6 +110,10 @@ public class calculatorTest {
         assertNotEquals("-1",calc.division("-3","-3"));
     }
 
+    @Test
+    public void ITAdd_test(){
+        assertEquals( "3", calc.addition("(calc.subtraction("2 ,1"))","2"));
 
+    }
 
 }
