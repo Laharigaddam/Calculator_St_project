@@ -1,8 +1,14 @@
 public class calculator {
 
-    public int addition(int a, int b) {
-        return a+b;
+    public String addition(String a, String b) {
+        double da = Double.parseDouble(a);
+        double db = Double.parseDouble(b);
+
+        da += db;
+
+        return display(da);
     }
+
     public int subtraction(int a, int b) {
         return a-b;
     }

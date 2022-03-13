@@ -9,10 +9,10 @@ public class calculatorTest {
     @Test
     //test case by lahari
     public void add_test(){
-        assertEquals(4,calc.addition(2,2));
-        assertEquals(-6,calc.addition(-1,-5));
-        assertEquals(3,calc.addition(4,-1));
-        assertEquals(-5,calc.addition(-7,2));
+        assertEquals("4",calc.addition("2","2"));
+        assertEquals("-6",calc.addition("-1","-5"));
+        assertEquals("1.00000E+10",calc.addition("9999999999","1"));
+        assertEquals("-1.00000E+10",calc.addition("-9999999999","-1"));
     }
     @Test
     //test cases by Neeraj
