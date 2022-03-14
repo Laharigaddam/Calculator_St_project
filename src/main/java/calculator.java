@@ -57,6 +57,10 @@ public class calculator {
     }
 
     public String sqrRT(String a) {
-        return null;
+        double da = Double.parseDouble(a);
+        if(da<0)
+            return "Can't square root negative numbers";
+        da = Math.sqrt(da);
+        return display(da);
     }
 }
