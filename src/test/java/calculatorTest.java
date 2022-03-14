@@ -166,6 +166,6 @@ public class calculatorTest {
     @Test
     public void IT_Add_Sub_Mul_Div(){
         assertEquals( "3", calc.addition(calc.subtraction(calc.multiplication(calc.division("6","2"), "2"), "5"),"2"));
-
+        assertEquals( "1", calc.addition(calc.subtraction(calc.multiplication(calc.division("6","-2"), "2"), "-5"),"2"));
     }
 }
