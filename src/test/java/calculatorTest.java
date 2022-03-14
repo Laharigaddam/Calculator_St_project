@@ -88,5 +88,16 @@ public class calculatorTest {
             assertNotEquals(tokenizer.nextToken(), calc.division(tokenizer.nextToken(), tokenizer.nextToken()));
         }
     }
+    @Test
+    public void SqrRT_Test(){
+        read.loadFile("SquareRootTests");
+        String line;
+        while((line = read.readLine()) != null)
+        {
+            StringTokenizer tokenizer = new StringTokenizer(line,",");
+            assertEquals(tokenizer.nextToken(),calc.sqrRT(tokenizer.nextToken()));
+        }
+    }
+
 
 }
