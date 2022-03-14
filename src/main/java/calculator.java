@@ -18,38 +18,41 @@ public class calculator {
         return display(da);
     }
 
-        public String multiplication(String a, String b) {
-            double da = Double.parseDouble(a);
-            double db = Double.parseDouble(b);
+    public String multiplication(String a, String b) {
+        double da = Double.parseDouble(a);
+        double db = Double.parseDouble(b);
 
-            da *= db;
+        da *= db;
 
-            return display(da);
-        }
-        public String division(String a, String b) {
-            double da = Double.parseDouble(a);
-            double db = Double.parseDouble(b);
-
-            da /= db;
-
-            return display(da);
-        }
-
-        private int IntLength(double a){
-            String test = Integer.toString((int)a);
-            return test.length();
-        }
-
-        private String display(double da){
-            if(da > 9999999999d || da < -9999999999d || ( da < 0.000000001 && da > -0.000000001 ))
-                return String.format("%5.5E", da);
-            else if(da == (int)da)
-                return String.valueOf((int)da);
-            else{
-                int fractional = 10 - IntLength(da);
-                String tmp = IntLength(da) + "." + fractional;
-                return String.format("", da);
-            }
-        }
-
+        return display(da);
     }
+
+    public String division(String a, String b) {
+        double da = Double.parseDouble(a);
+        double db = Double.parseDouble(b);
+
+        if(db == 0)
+            return "Can't divide by zero";
+
+        da /= db;
+
+        return display(da);
+    }
+
+    private int IntLength(double a){
+        String test = Integer.toString((int)a);
+        return test.length();
+    }
+
+    private String display(double da){
+        if(da > 9999999999d || da < -9999999999d || ( da < 0.000000001 && da > 0 ) || ( da > -0.000000001 && da < 0))
+            return String.format("%5.5E", da);
+        else if(da == (int)da)
+            return String.valueOf((int)da);
+        else{
+            int fractional = 10 - IntLength(da);
+            String tmp = IntLength(da) + "." + fractional;
+            return String.format("", da);
+        }
+    }
+}
