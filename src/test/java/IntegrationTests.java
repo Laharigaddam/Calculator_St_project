@@ -12,6 +12,7 @@ public class IntegrationTests {
         assertEquals( "5", calc.addition(calc.subtraction("2" ,"-1"),"2"));
         assertEquals( "-1", calc.addition(calc.subtraction("-2" ,"1"),"2"));
         assertEquals( "-3", calc.addition(calc.subtraction("-2" ,"-1"),"-2"));
+        assertEquals( "-4", calc.addition(calc.subtraction("-2" ,"-1"),"-3"));
     }
 
     @Test
