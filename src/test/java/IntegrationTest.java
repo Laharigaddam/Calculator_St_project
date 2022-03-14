@@ -57,7 +57,7 @@ public class IntegrationTest {
         assertEquals( "-1", calc.division(calc.subtraction("2" ,"4"),"2"));
         assertEquals( "4", calc.division(calc.subtraction("2" ,"-6"),"2"));
         assertEquals( "-7", calc.division(calc.subtraction("-13" ,"1"),"2"));
-        assertEquals( "3", calc.division(calc.subtraction("-2" ,"-8"),"-2"));
+        assertEquals( "-3", calc.division(calc.subtraction("-2" ,"-8"),"-2"));
     }
     @Test
     public void IT_Add_Sub_Mul_Div(){
